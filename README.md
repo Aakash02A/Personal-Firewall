@@ -32,3 +32,19 @@ It captures, analyzes, and logs network traffic in real-time and allows dynamic 
 - Install dependencies:
   ```bash
   pip install scapy
+  ```
+
+  ---
+
+## 📖 How It Works
+
+- Captures all IP packets using Scapy’s sniff() function.
+- Each packet is parsed to extract:
+  - Source/Destination IP
+  - Protocol (TCP/UDP)
+  - Source/Destination Port
+- All traffic is logged to logs/traffic_log.txt.
+- Blocked packets are marked as [BLOCKED] in logs.
+- Use the GUI to add IPs or ports to the blocklist in real time.
+
+---
